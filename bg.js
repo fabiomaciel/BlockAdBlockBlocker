@@ -10,7 +10,7 @@ function blockBlocker() {
     tries += 1;
     var div = document.querySelector("#detecta-adblock");
     if (div) {
-      div.parentNode.removeChild(div);
+      div.remove();
       document.querySelector("body").style.overflow = "scroll";
       console.log("BLOCKED!")
     }
